@@ -3,3 +3,29 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  /* Color */
+
+  --color-Pale-Blue: hsl(243, 100%, 93%);
+  --color-Grayish-Blue: hsl(229, 7%, 55%);
+  --color-Dark-Blue: hsl(228, 56%, 26%);
+  --color-Very-Dark-Blue: hsl(229, 57%, 11%);
+  --colo-Gradient-low: hsl(6, 100%, 80%);
+  --color-Gradient-high: hsl(335, 100%, 65%);
+
+  /* font-size */
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: var(--color-Very-Dark-Blue);
+}
