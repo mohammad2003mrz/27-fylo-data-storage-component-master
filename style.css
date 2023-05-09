@@ -29,3 +29,37 @@ body {
   background-position: bottom;
   background-color: var(--color-Very-Dark-Blue);
 }
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.column-2 {
+  display: flex;
+}
+.logo {
+  width: 9.6rem;
+}
+.left-s {
+  border-radius: 0.8rem;
+  border-top-right-radius: 6rem;
+  gap: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 3rem;
+  width: 30rem;
+  background: var(--color-Dark-Blue);
+}
+.icon-f {
+  display: flex;
+  gap: 1rem;
+}
+.icon-b {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: var(--color-Very-Dark-Blue);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.right-s {
+}
