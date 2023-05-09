@@ -118,6 +118,7 @@ body::after {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  animation: leftToright 2s ease-in-out;
 }
 .cir-load {
   content: "";
@@ -174,4 +175,15 @@ span {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
   right: 0;
   position: absolute;
+}
+
+/* Anim */
+
+@keyframes leftToright {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
 }
