@@ -24,10 +24,22 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url(images/bg-desktop.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
+  position: relative;
+  font-family: "raleway", sans-serif;
   background-color: var(--color-Very-Dark-Blue);
+}
+body::after {
+  position: absolute;
+  content: "";
+  top: 50vh;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  z-index: -1;
 }
 .container {
   max-width: 130rem;
@@ -35,6 +47,7 @@ body {
 }
 .column-2 {
   display: flex;
+  gap: 2.4rem;
 }
 .logo {
   width: 9.6rem;
@@ -48,6 +61,7 @@ body {
   justify-content: start;
   padding: 3rem;
   width: 30rem;
+  height: 16rem;
   background: var(--color-Dark-Blue);
 }
 .icon-f {
@@ -62,4 +76,48 @@ body {
   border-radius: 0.5rem;
 }
 .right-s {
+  width: 60rem;
+  height: 11rem;
+  align-self: flex-end;
+  background: var(--color-Dark-Blue);
+  border-radius: 0.8rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 0 3.6rem;
+  flex-direction: column;
+}
+.con-r {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.load-reg {
+  content: "";
+  height: 1.6rem;
+  width: 100%;
+  border-radius: 1rem;
+  background: var(--color-Very-Dark-Blue);
+  display: flex;
+  align-items: center;
+}
+.fill-load {
+  content: "";
+  height: 1.2rem;
+  width: 60%;
+  transform: translate(1%);
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    to right,
+    var(--colo-Gradient-low),
+    var(--color-Gradient-high)
+  );
+}
+.cir-load {
+}
+.cap-f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
