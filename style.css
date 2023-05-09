@@ -8,6 +8,7 @@
 
   --color-Pale-Blue: hsl(0, 100%, 99%);
   --color-Grayish-Blue: hsl(243, 100%, 93%);
+  --color-Grayish-Blue-high: hsl(243, 42%, 78%);
   --color-Dark-Blue: hsl(228, 56%, 26%);
   --color-Very-Dark-Blue: hsl(229, 57%, 11%);
   --colo-Gradient-low: hsl(6, 100%, 80%);
@@ -86,6 +87,7 @@ body::after {
   justify-content: center;
   padding: 0 3.6rem;
   flex-direction: column;
+  position: relative;
 }
 .con-r {
   display: flex;
@@ -135,6 +137,41 @@ body::after {
   color: var(--color-Grayish-Blue);
 }
 span {
-  color: var(--color-Pale-Blue);
+  /* color: var(--color-Pale-Blue); */
   font-weight: 700;
+}
+.reg-w {
+  content: "";
+  width: 14rem;
+  height: 5.2rem;
+  background: var(--color-Pale-Blue);
+  position: absolute;
+  top: 0;
+  right: -5%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  color: var(--color-Very-Dark-Blue);
+}
+.big {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.small {
+  color: var(--color-Grayish-Blue-high);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.c-p {
+  content: "";
+  width: 2.8rem;
+  height: 2.8rem;
+  background: var(--color-Pale-Blue);
+  bottom: -30%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  right: 0;
+  position: absolute;
 }
